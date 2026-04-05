@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 广播站</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+
+    <div class="header">
+      <div class="header-left">
+        <span class="logo">📡</span>
+        <div>
+          <div class="title">AI BROADCAST</div>
+          <div class="subtitle" id="subtitle">正在扫描标签页...</div>
+        </div>
+      </div>
+      <button class="btn-scan" id="btn-scan" title="重新扫描">↻</button>
+    </div>
+
+    <div class="targets" id="targets">
+      <!-- 由 JS 填充 -->
+    </div>
+
+    <div class="compose">
+      <textarea
+        id="msg-input"
+        placeholder="输入你的问题，一键广播到所有 AI...
+
+Ctrl+Enter 快速发送"
+      ></textarea>
+      <div class="compose-footer">
+        <span class="char-count" id="char-count">0 字</span>
+        <button class="btn-send" id="btn-send">⚡ 全部发送</button>
+      </div>
+    </div>
+
+    <div class="result-area" id="result-area"></div>
+
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
